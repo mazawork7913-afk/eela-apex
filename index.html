@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --deep-black: #0A0A0A;
+            --slate: #1A1A1A;
+            --white: #F5F5F5;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--deep-black);
+            color: var(--white);
+            font-family: 'Times New Roman', serif; /* Classic, authoritative feel */
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Hero Section */
+        header {
+            text-align: center;
+            padding: 80px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            letter-spacing: 6px;
+            color: var(--gold);
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-style: italic;
+            font-size: 1.2rem;
+            color: #888;
+            margin-top: 10px;
+        }
+
+        /* Mission Section */
+        .mission {
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        .mission h2 {
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .mission p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* The Houses Grid */
+        .houses-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .house-card {
+            background: var(--slate);
+            padding: 25px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        .house-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-5px);
+        }
+
+        .house-card h3 {
+            color: var(--gold);
+            margin-top: 0;
+        }
+
+        /* CTA Button */
+        .cta-container {
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .btn {
+            background: var(--gold);
+            color: black;
+            padding: 20px 40px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-radius: 2px;
+            transition: 0.4s;
+        }
+
+        .btn:hover {
+            background: white;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>EELA APEX LEAGUE</h1>
+        <div class="subtitle">The Premier Arena for the Ethiopian & Eritrean Diaspora</div>
+    </header>
+
+    <div class="container">
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>Cultivating the next generation of global executives, scientists, and jurists through high-stakes academic competition and mentorship.</p>
+        </section>
+
+        <section class="houses">
+            <h2 style="text-align: center; color: var(--gold); text-transform: uppercase;">The Houses</h2>
+            <div class="houses-grid">
+                <div class="house-card">
+                    <h3>Chamber of Law</h3>
+                    <p>Master the art of rhetoric and logic through professional-grade mock trials.</p>
+                </div>
+                <div class="house-card">
+                    <h3>Physics Guild</h3>
+                    <p>Apply advanced calculus to structural challenges like the Diaspora Bridge.</p>
+                </div>
+                <div class="house-card">
+                    <h3>Heritage Gallery</h3>
+                    <p>Merging cultural history with modern media for global advocacy.</p>
+                </div>
+                <div class="house-card">
+                    <h3>Math Olympiad</h3>
+                    <p>Elite-level competitive math focusing on live proofs and advanced algebra.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="cta-container">
+            <a href="https://docs.google.com/forms/d/1uEi0ZHkH02PXYRLFYpeqShHrw4gtjwzcsHfxqr6usQ0/viewform" class="btn">Enter the Qualifying Round</a>
+        </div>
+    </div>
